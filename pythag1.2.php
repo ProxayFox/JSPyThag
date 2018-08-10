@@ -7,7 +7,7 @@
 		<section class="container">
 			<!-- HTML code to find the C value -->
 			<section class="row col-sm border" style="padding: 10px;">
-				<div>
+				<div style="padding: 50px;">
 					<h2>Calculating Hypo</h2>
 					<!-- user input for values -->
 					<input id="getCA" type="number" placeholder="Input the A (Height) value Here" class="form-control" style="width: 275px;">
@@ -20,9 +20,9 @@
 
 		 		<!-- formula -->
 				<div style="padding-top: 60px; padding-left: 25px;">
-					<p>C^2 = A^2 + B^2</p>
-					<p>X^2 = <span id="outputCFormA">0</span>^2 + <span id="outputCFormB">0</span>^2</p>
-					<p>X = √<span id="outputCsqrt">0</span></p>
+					<p>C&sup2; = A&sup2; + B&sup2;</p>
+					<p>X&sup2; = <span id="outputCFormA">0</span>&sup2; + <span id="outputCFormB">0</span>&sup2;</p>
+					<p>X = &#8730;<span id="outputCsqrt">0</span></p>
 					<p>X = <span id="outputCFormAnswer">0</span></p>
 				</div>
 
@@ -53,8 +53,8 @@
 			 </div>
 		 		<!-- formula -->
 				<div style="padding-top: 60px; padding-left: 25px;">
-					<p>B^2 = C^2 - A^2</p>
-					<p>X^2 = <span id="outputBFormA">0</span>^2 - <span id="outputBFormC">0</span>^2</p>
+					<p>B&sup2; = C&sup2; - A&sup2;</p>
+					<p>X&sup2; = <span id="outputBFormA">0</span>&sup2; - <span id="outputBFormC">0</span>&sup2;</p>
 					<p>X = √<span id="outputBsqrt">0</span></p>
 					<p>X = <span id="outputBFormAnswer">0</span></p>
 				</div>
@@ -86,16 +86,16 @@
 
 		 		<!-- formula -->
 				<div style="padding-top: 60px; padding-left: 25px;">
-					<p>A^2 = C^2 - B^2</p>
-					<p>X^2 = <span id="outputAFormB">0</span>^2 - <span id="outputAFormC">0</span>^2</p>
-					<p>X = √<span id="outputAsqrt">0</span></p>
+					<p>A&sup2; = C&sup2; - B&sup2;</p>
+					<p>X&sup2; = <span class="outputAFormB">0</span>&sup2; - <span id="outputAFormC">0</span>&sup2;</p>
+					<p>X = &#8730;<span id="outputAsqrt">0</span></p>
 					<p>X = <span id="outputAFormAnswer">0</span></p>
 				</div>
 				<!-- SVG triangle for mesurments -->
 				<div style="padding-top: 60px; padding-left: 100px;">
 					<svg height="200" width="250">
 		 				<polygon points="100,5 100,150 249,150" style="fill:lightblue;stroke:black;stroke-width:2" />
-		 				<text x="125" y="175" text-anchor="middle" fill="black" font-size="20" id="outputATriB">B</text>
+		 				<text x="125" y="175" text-anchor="middle" fill="black" font-size="20" class="outputATriB">B</text>
 		 				<text x="200" y="50" text-anchor="middle" fill="black" font-size="20" id="outputATriC">C</text>
 		 				<text x="50" y="100" text-anchor="middle" fill="black" font-size="20">X</text>
 		 			</svg>
@@ -145,7 +145,7 @@
 			  document.getElementById("outputATriB").innerHTML = b;
 			  document.getElementById("outputATriC").innerHTML = c;
 			  document.getElementById("outputAsqrt").innerHTML = Math.pow(c, 2) - Math.pow(b, 2);
-			  document.getElementById("outputAFormAnswer").innerHTML = b;
+			  document.getElementById("outputAFormAnswer").innerHTML = a;
 			}
 		</script>
 	</body>
